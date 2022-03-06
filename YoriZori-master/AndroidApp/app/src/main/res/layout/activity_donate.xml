@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage.Donate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/don_headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/don_backBtn"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_arrow_left"
+            android:scaleType="fitCenter"
+            android:background="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/don_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="후원하기"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/don_backBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/don_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/don_headerLayout">
+
+        <TextView
+            android:id = "@+id/text_begging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이 어플은 칠면조 팀원들이 무급으로 피땀을 흘리며 만들었습니다. 그들을 위한 작은 자비를 베풀어 주시면 더 좋은 서비스로 보답하겠습니다."
+            android:textSize="20dp"
+            android:lines = "4"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="20pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_account"
+            />
+        <TextView
+            android:id = "@+id/text_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" [국민] 987654-00-123456 "
+            android:textSize="20dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="5pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_begging"
+            />
+        <Button
+            android:id="@+id/donate_btn"
+            android:text="DONATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            app:layout_constraintTop_toBottomOf="@id/text_account"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

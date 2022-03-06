@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="양파 유통기한"
+        android:textColor="#000000"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:layout_marginTop="5pt"
+        android:paddingVertical="3pt"
+        android:background="@drawable/pink_rectangle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <DatePicker
+        android:id="@+id/spinner_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5pt"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        app:layout_constraintTop_toBottomOf="@id/title_picker"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_no_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="필요없어!"
+        android:background="@drawable/rectangle_border"
+        app:layout_constraintRight_toLeftOf="@id/btn_ok_picker"
+        app:layout_constraintTop_toBottomOf="@id/spinner_picker"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_ok_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:background="@drawable/rectangle_border"
+        app:layout_constraintLeft_toRightOf="@id/btn_no_picker"
+        app:layout_constraintTop_toBottomOf="@id/spinner_picker"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

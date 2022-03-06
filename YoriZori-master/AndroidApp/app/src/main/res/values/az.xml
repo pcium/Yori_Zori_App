@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hello">
+
+        <item>"1. 기름을 두른다"</item>
+        <item>"2. 계란을 깨서 넣고 마구 젓는다"</item>
+        <item>"3. 밥을 넣어 잘 풀어준다"</item>
+        <item>"4. 밥이 모두 풀어지면 소금간을 한다"</item>
+        <item>"5. 완성!"</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "642709639720",
+    "firebase_url": "https://yorizori-proto.firebaseio.com",
+    "project_id": "yorizori-proto",
+    "storage_bucket": "yorizori-proto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642709639720:android:34c71073257bbec50f9b1d",
+        "android_client_info": {
+          "package_name": "com.e.yorizori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642709639720-6eajgbt1neggp0c0kuqvnk7gfpm3i4m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9fSufWyKxZpUFl2_dymACCj92d5-i5dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642709639720-6eajgbt1neggp0c0kuqvnk7gfpm3i4m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MyPage">
+
+    <TextView
+        android:id = "@+id/my_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:textSize="30sp"
+        android:layout_marginLeft="18sp"
+        android:layout_marginTop="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:layout_margin="16sp"
+        android:padding="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/my_page_title">
+
+        <TextView
+            android:id = "@+id/text_scrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 스크랩"
+            android:textSize="24dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/menuLayout"
+            app:layout_constraintBottom_toTopOf="@id/text_wrote"
+            />
+
+        <TextView
+            android:id = "@+id/text_wrote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 내가 쓴 레시피"
+            android:textSize="24dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_scrap"
+            app:layout_constraintBottom_toTopOf="@id/text_allergy"
+            />
+
+        <TextView
+            android:id = "@+id/text_allergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 알레르기 재료"
+            android:textSize="24sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_wrote"
+            app:layout_constraintBottom_toTopOf="@id/text_account_set"
+            />
+
+        <TextView
+            android:id = "@+id/text_account_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 계정 설정"
+            android:textSize="24sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_allergy"
+            app:layout_constraintBottom_toTopOf="@id/text_suggest"
+            />
+
+        <TextView
+            android:id = "@+id/text_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 건의하기"
+            android:textSize="24sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_account_set"
+            app:layout_constraintBottom_toTopOf="@id/text_donate"
+            />
+
+        <TextView
+            android:id = "@+id/text_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 후원하기"
+            android:textSize="24sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_suggest"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
